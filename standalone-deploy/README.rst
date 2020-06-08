@@ -36,11 +36,11 @@ possibility of encountering problems.
 ::
 
    #Get code
-   FATE $ wget https://webank-ai-1251170195.cos.ap-guangzhou.myqcloud.com/docker_standalone-fate-1.4.0.tar.gz
-   FATE $tar -xzvf docker_standalone-fate-1.4.0.tar.gz
+   FATE $ wget https://webank-ai-1251170195.cos.ap-guangzhou.myqcloud.com/docker_standalone-fate-1.4.1.tar.gz
+   FATE $tar -xzvf docker_standalone-fate-1.4.1.tar.gz
 
    #Execute the command
-   FATE $ cd docker_standalone-fate-1.4.0
+   FATE $ cd docker_standalone-fate-1.4.1
    FATE $ bash install_standalone_docker.sh
 
    #Validation results
@@ -71,21 +71,21 @@ Http://hostip:8080.
 
    ::
 
-      wget https://webank-ai-1251170195.cos.ap-guangzhou.myqcloud.com/standalone-fate-master-1.4.0.tar.gz
-      tar -xzvf  standalone-fate-master-1.4.0.tar.gz
+      wget https://webank-ai-1251170195.cos.ap-guangzhou.myqcloud.com/standalone-fate-master-1.4.1.tar.gz
+      tar -xzvf  standalone-fate-master-1.4.1.tar.gz
 
 3. Enter FATE directory and execute the init.sh.
 
    ::
 
-      cd standalone-fate-master-1.4.0
+      cd standalone-fate-master-1.4.1
       source init.sh init
 
 4. Execution test.
 
    ::
 
-      cd standalone-fate-master-1.4.0
+      cd standalone-fate-master-1.4.1
       bash ./federatedml/test/run_test.sh
 
 There are a few algorithms under
