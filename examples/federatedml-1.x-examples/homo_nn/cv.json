@@ -78,7 +78,7 @@
        {
         "workers": 1,
         "epochs":1,
-        "batch_size":1,
+        "batch_size":64,
         "lr": 0.01,
         "momentum": 0.9,
         "weight_decay":1e-4,
@@ -90,10 +90,10 @@
       ],
       "early_stop": {
         "early_stop": "diff",
-        "eps": 1e-4
+        "eps": 1e-2
       },
       "loss": "user_define",
-      "max_iter": 1
+      "max_iter": 10
     }
   }
 }

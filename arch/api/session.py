@@ -37,7 +37,6 @@ def init(job_id=None,
          set_log_dir=True):
     if RuntimeInstance.SESSION:
         return
-
     if isinstance(mode, int):
         mode = WorkMode(mode)
     if isinstance(backend, int):
@@ -52,6 +51,7 @@ def init(job_id=None,
     if eggroll_version is None:
         eggroll_version = _EGGROLL_VERSION
 
+    print(eggroll_version, backend)
     if backend.is_eggroll():
         if eggroll_version < 2:
             from arch.api.impl.based_1x import build

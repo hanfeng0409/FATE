@@ -1,0 +1,5 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/data/gaozb/FATE/FATE/fate_flow/fate_flow_server.py", line 29, in <module>
+    from arch.api import session, Backend
+ModuleNotFoundError: No module named 'arch'

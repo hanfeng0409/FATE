@@ -23,7 +23,7 @@ from contextlib import closing
 import time
 
 import requests
-
+sys.path.append('/data/gaozb/FATE/FATE/')
 from arch.api.utils import file_utils
 from arch.api.utils.core import get_lan_ip
 from fate_flow.settings import SERVERS, ROLE, API_VERSION, USE_LOCAL_DATA

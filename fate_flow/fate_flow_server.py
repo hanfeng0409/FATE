@@ -26,6 +26,7 @@ from grpc._cython import cygrpc
 from werkzeug.serving import run_simple
 from werkzeug.wsgi import DispatcherMiddleware
 
+sys.path.append("/data/gaozb/FATE/FATE")
 from arch.api import session, Backend
 from fate_flow.utils.proto_compatibility import proxy_pb2_grpc
 from fate_flow.apps.data_access_app import manager as data_access_app_manager

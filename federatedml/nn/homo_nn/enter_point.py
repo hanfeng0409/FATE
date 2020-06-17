@@ -225,7 +225,7 @@ class HomoNNClient(HomoNNBase):
                     # print('shape of data:', data.shape)
                     # print('shape of coord:', coord.shape)
                     # print('*******************', i, "/", str(len(trainloader)))
-                    Logger.info(f"{i}:shape of data: {data.shape}, shape of coord:{coord.shape}")
+                    Logger.info(f"{i}:shape of data: {data.shape}" ) #, shape of coord:{coord.shape}")
                     output = self.nn_model._model(data, coord)
                     loss_output = loss(output, target)
                     optimizer.zero_grad()

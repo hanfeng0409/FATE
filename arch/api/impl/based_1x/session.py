@@ -40,7 +40,8 @@ def build_eggroll_runtime(work_mode: WorkMode, eggroll_session):
 
 def build_eggroll_session(work_mode: WorkMode, job_id=None, server_conf_path="eggroll/conf/server_conf.json"):
     if work_mode.is_standalone():
-        from eggroll.api.core import EggrollSession
+        #from eggroll.api.core import EggrollSession
+        from arch.standalone.core import EggrollSession
         import uuid
         session_id = job_id or str(uuid.uuid1())
         session = EggrollSession(session_id=session_id)
